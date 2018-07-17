@@ -23,7 +23,7 @@ footer {
 	color: #d5d5d5;
 	padding-top: 2em;
 	text-align: center;
-	/*height: 200px;*/
+
 }
 
 hr.light {
@@ -40,14 +40,6 @@ footer a {
 }
 
 
-
-#logo {
-	width: 5em;
-	height: 5em;
-	float: left;
-	border-radius: 50px;
-}
-
 .navbar {
 	padding: .8em;
 }
@@ -62,6 +54,57 @@ footer a {
 }
 
 
+.photo-gallery {
+	margin: 10px;
+}
+.photo-gallery img {
+	width: 180px;
+	height: 230px;
+	padding: 5px;
+	filter: drop-shadow(8px 8px 10px gray);
+	transition: 1s;
+	border-radius: 50px;
+	margin-right: 10px;
+}
+
+.photo-gallery img:hover {
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
+
+.videos video {
+	width: 440px;
+	height: 300px;
+}
+
+
+#logo {
+	width: 5em;
+	height: 5em;
+	float: left;
+	border-radius: 50px;
+}
+
+.clear:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.video1 {
+	float: left;
+	margin-right: 50px;
+	text-align: center;
+	padding: 10px;
+}
+
+#sidebar {
+	background-color: blue;
+}
+
+.videos h4{
+	/*margin-bottom: -40px;*/
+}
 
 
 

@@ -6,6 +6,9 @@
 	<title> Capstone 1 </title>
 	<!-- boostrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- lightbox -->
+	<link rel="stylesheet" type="text/css" href="assets/css/lightbox.css">
+	<script type="text/javascript" src="assets/js/lightbox-plus-jquery.min.js"></script>
 	<!-- stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/gallery.css">
 	<!-- fontawesome -->
@@ -53,23 +56,68 @@
 <!-- Main page  -->
 <div class="container-fluid padding">
 	<div class="row">
-		<div class="col-lg-8 col-md-8 col-xs-12">
+		<div class="col-lg-9 col-md-8">
+			<div class="photo-gallery">
 			<h4 class="display-4">Photos</h4>
+				<a href="assets/images/gallery/image1.jpg" data-lightbox="dogy" ><img src="assets/images/gallery/image1.jpg" alt="Dog pic"></a>
+				<a href="assets/images/gallery/image2.jpg" data-lightbox="dogy"><img src="assets/images/gallery/image2.jpg" alt="Dog pic"></a>
+				<a href="assets/images/gallery/image3.jpg" data-lightbox="dogy"><img src="assets/images/gallery/image3.jpg" alt="Dog pic"></a>
+				<a href="assets/images/gallery/image4.jpg" data-lightbox="dogy"><img src="assets/images/gallery/image4.jpg" alt="Dog pic"></a>
+				<a href="assets/images/gallery/image5.jpg" data-lightbox="dogy"><img src="assets/images/gallery/image5.jpg" alt="Dog pic"></a>
+				<a href="assets/images/gallery/image6.jpg" data-lightbox="dogy"><img src="assets/images/gallery/image6.jpg" alt="Dog pic"></a>
+				<a href="assets/images/gallery/image7.jpg" data-lightbox="dogy"><img src="assets/images/gallery/image7.jpg" alt="Dog pic"></a>
+				<a href="assets/images/gallery/image8.jpg" data-lightbox="dogy"><img src="assets/images/gallery/image8.jpg" alt="Dog pic"></a>
+				<a href="assets/images/gallery/image9.jpg" data-lightbox="dogy"><img src="assets/images/gallery/image9.jpg" alt="Dog pic"></a>
+				<a href="assets/images/gallery/image10.jpg" data-lightbox="dogy"><img src="assets/images/gallery/image10.jpg" alt="Dog pic"></a>
+			</div> <!-- end photo-gallery -->
+		
+				<hr class="light">
+					<div class="videos clear">
+						<h4 class="display-4">Videos</h4>
+						<div class="video1">
+		 					<video controls>
+		 						<source src="assets/images/gallery/video1.mp4" type="video/mp4">
+		 					</video>
+		 					<p class="lead">Donations from Baytech BPO Corporation</p>
+	 					</div>
+	 					
+	 					<div class="video1">
+		 					<video controls>
+		 						<source src="assets/images/gallery/video1.mp4" type="video/mp4">
+		 					</video>
+		 					<p class="lead">Donations from Baytech BPO Corporation</p>
+	 					</div>
 
-			<a href="assets/images/gallery/image1.jpg"><img src="assets/images/gallery/image1.jpg" alt="Dog pic"></a>
-			<a href="assets/images/gallery/image2.jpg"><img src="assets/images/gallery/image2.jpg" alt="Dog pic"></a>
-			<a href="assets/images/gallery/image3.jpg"><img src="assets/images/gallery/image3.jpg" alt="Dog pic"></a>
-			<a href="assets/images/gallery/image4.jpg"><img src="assets/images/gallery/image4.jpg" alt="Dog pic"></a>
-			<a href="assets/images/gallery/image5.jpg"><img src="assets/images/gallery/image5.jpg" alt="Dog pic"></a>
-			<a href="assets/images/gallery/image6.jpg"><img src="assets/images/gallery/image6.jpg" alt="Dog pic"></a>
-			<a href="assets/images/gallery/image7.jpg"><img src="assets/images/gallery/image7.jpg" alt="Dog pic"></a>
-			<a href="assets/images/gallery/image8.jpg"><img src="assets/images/gallery/image8.jpg" alt="Dog pic"></a>
+	 					<div class="video1">
+		 					<video controls>
+		 						<source src="assets/images/gallery/video1.mp4" type="video/mp4">
+		 					</video>
+		 					<p class="lead">Donations from Baytech BPO Corporation</p>
+	 					</div>
 
-		</div> <!-- end col -->
+	 					<div class="video1">
+		 					<video controls>
+		 						<source src="assets/images/gallery/video1.mp4" type="video/mp4">
+		 					</video>
+		 					<p class="lead">Donations from Baytech BPO Corporation</p>
+	 					</div>
+
+					</div>
+
+				</div> <!-- end videos -->
+
+				<div class="col-lg-3 col-md-4" id="sidebar">
+					<div class="hovereffect" id="hover">
+       			 		<img class="img-responsive" src="#" alt="sidebar image" id="sidebar-image">
+        				<div class="overlay">
+          					 <h2>Make a difference!</h2>
+          					 <a class="info" href="#">Donate Now!</a>
+          				</div> <!-- end overlay -->
+					</div> <!-- end hover effect -->
+    			</div>	<!-- end col 3 -->	
+		
+			
 	</div> <!-- end row -->
-
-
-
 
 </div><!--  end container -->
 
@@ -122,6 +170,7 @@
 
 
 
+<!-- lightbox -->
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
