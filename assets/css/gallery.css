@@ -9,12 +9,14 @@ html, body {
 	height: 100%;
 	width: 100%;
 	color: #222;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-h3 {
-	padding-top: 8%;
-	font-family: 'Montserrat', sans-serif;
-
+.navbar-brand h1{
+  padding-top: 10%;
+  font-size: 30px;
+  font-family: Garamond;
 }
 
 
@@ -23,6 +25,8 @@ footer {
 	color: #d5d5d5;
 	padding-top: 2em;
 	text-align: center;
+	/*overflow: hidden;*/
+	width: 100%;
 
 }
 
@@ -53,12 +57,15 @@ footer a {
 
 }
 
+button {
+	margin-top: 10px;
+}
 
 .photo-gallery {
 	margin: 10px;
 }
 .photo-gallery img {
-	width: 180px;
+	width: 165px;
 	height: 230px;
 	padding: 5px;
 	filter: drop-shadow(8px 8px 10px gray);
@@ -73,7 +80,7 @@ footer a {
 }
 
 .videos video {
-	width: 440px;
+	width: 380px;
 	height: 300px;
 }
 
@@ -91,71 +98,227 @@ footer a {
 	display: block;
 }
 
-.video1 {
+.video {
 	float: left;
 	margin-right: 50px;
 	text-align: center;
 	padding: 10px;
 }
 
-#sidebar {
-	background-color: blue;
+.sidebar {
+	padding: 40px;
+
 }
 
-.videos h4{
-	/*margin-bottom: -40px;*/
+#card-img {
+	width: 100%;
+	height: 200px;
 }
 
+.card {
+	margin: 40px 30px 0px 0px;
+	margin-bottom: 50px;
+}
 
+.blockquote-footer {
+	width: 100%;
+	margin: 0;
+	background-color: #fff;
+}
 
+#blockquote-text {
+	text-align: justify;
+	overflow: hidden;
+}
+/*---------------------------------------hover effect --------------------------------*/
 
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
 
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: -200px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.1s ease-out 0.5s;
+  transition: all 0.1s ease-out 0.5s;
+}
 
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  top: 0px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
 
+.hovereffect img {
+  display: block;
+  position: relative;
+}
 
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: 30px;
+  margin-top: 0px;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
 
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
 
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  margin: 250px 0 0 0;
+  background-color: transparent;
+  -webkit-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  color: #000;
+  border: 1px solid #000;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
 
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hovereffect:hover a.info {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  box-shadow: 0 0 5px #000;
+  color: #000;
+  border: 1px solid #000;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
 
 
 
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
 
+
+ @media (max-width: 380px) { 
+    .navbar-brand {
+      display: none;
+    }
+
+    .photo-gallery img {
+      width: 140px;
+    }
+
+    .video video {
+      width: 280px;
+    }
+
+
+    .card {
+      margin-left: 20px;
+    }
+
+    .display-4 {
+      font-size: 30px;
+    }
+
+    .lead {
+      font-size: 15px;
+    }
+
+    .card-body {
+      font-size: 20px;
+    }
+
+
+
+ }
+
+
+ @media (max-width: 415px) { 
+  .navbar-brand {
+    display: none;
+    margin: 0 auto;
   }
+
+ }
+
+  
 @media (max-width: 768px) {
+
+     .photo-gallery img {
+       width: 100%;
+       margin: 0 auto;
   
-}
-@media (max-width: 576px) {
-  
-}
+    }
+      .video video {
+      width: 100%;
+      float: left;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

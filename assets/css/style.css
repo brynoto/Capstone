@@ -3,26 +3,30 @@
 	padding: 0;
 	box-sizing: border-box;
 
+
 }
 
 html, body {
 	height: 100%;
-	width: 100%;
 	color: #222;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
-h3 {
-	padding-top: 8%;
-	font-family: 'Montserrat', sans-serif;
 
+
+.navbar-brand h1{
+	padding-top: 10%;
+	font-size: 30px;
+	font-family: Garamond;
 }
-
 
 footer {
 	background-color: #424B54;
 	color: #d5d5d5;
 	padding-top: 2em;
 	text-align: center;
+	width: 100%;
 
 }
 
@@ -66,7 +70,7 @@ footer a {
 	color: #FFFFFF;
 }
 
-.carousel-caption h3 {
+.carousel-caption h2 h3 {
 	font-size: 200%;
 	font-weight: 500;
 	text-shadow: 1px 1px 10px #000;
@@ -117,20 +121,18 @@ footer a {
 	text-align: center;
 }
 
-.sidebar {
-	/*margin: 10px;*/
+#main-container ul {
+	text-align: justify;
+	padding: 20px;
 }
 
+
 #sidebar-text {
-	/*text-align: center;*/
 	width: 100%;
 }
 
-#sidebar-button {
-    position: absolute;
-    left: 30%;
-    bottom: 0px;
-
+#button {
+	margin-top: 20px;
 }
 
 #card-image {
@@ -196,12 +198,69 @@ footer a {
 }
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
 
-  }
+
+ @media (max-width: 415px) { 
+ 	.navbar-brand {
+ 		display: none;
+ 	}
+
+
+ 	.carousel-item h1 {
+ 		font-size: 30px;		
+ 	}
+
+ 	.carousel-caption h2 {
+ 		display: none;
+ 	}
+
+ 	 .carousel-caption h3 {
+ 		font-size: 30px !important;
+ 	}
+ 	
+ 	.social a {
+ 		padding: 10px;
+ 	}
+
+ 	.card {
+ 		margin-right: 0px;
+ 		margin-bottom: 40px;
+ 	}
+
+ 	.button {
+ 		margin-top: 20px;
+   }
+
+   .display-4 {
+   		font-size: 30px;
+
+   }
+
+   .lead {
+   	 font-size: 15px;
+   }
+ }
+
+	
+/*// Medium devices (tablets, 768px and up)*/
 @media (max-width: 768px) {
-  
-}
-@media (max-width: 576px) {
-  
-}
+	.button {
+		position: absolute;
+		left: 20%;
+	}
+
+	.carousel-caption > h1 {
+ 		margin-bottom: 20px;
+ 	}
+
+ 	.carousel-caption h2 {
+ 		display: none;
+ 	}
+
+
+ 	.carousel-caption h3 {
+ 		font-size: 50px;
+ 	}
+ }
+
+
